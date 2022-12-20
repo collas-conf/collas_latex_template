@@ -1,6 +1,7 @@
 % This file was adapted from ICLR2022_conference.tex example provided for the ICLR conference
 \documentclass{article} % For LaTeX2e
-\usepackage{collas2022_conference,times}
+\usepackage{collas2023_conference,times}
+\usepackage{easyReview}
 
 % Optional math commands from https://github.com/goodfeli/dlbook_notation.
 \input{math_commands.tex}
@@ -10,7 +11,7 @@
 \hypersetup{
     colorlinks=true,
     linkcolor=red,
-    filecolor=magenta,      
+    filecolor=magenta,
     urlcolor=blue,
     citecolor=purple,
     pdftitle={Overleaf Example},
@@ -20,7 +21,7 @@
 
 
 
-\title{Formatting Instructions for CoLLAs 2022 \\ Conference Submissions}
+\title{Formatting Instructions for CoLLAs 2023 \\ Conference Submissions}
 
 % Authors must not appear in the submitted version. They should be hidden
 % as long as the \collasfinalcopy macro remains commented out below.
@@ -59,16 +60,18 @@ Address \\
 
 % \collasfinalcopy % Uncomment for camera-ready version, but NOT for submission.
 
+% For text
+
 \begin{document}
 
 
 \maketitle
 
 \begin{abstract}
-Concise and insightful abstract for the paper. Please follow the instructions below for structuring your submission to CoLLAs 2022. This template follows closely the template for ICLR 2022 submissions, with some minor modifications. A conference submissions to CoLLAs should aim for 9 pages, with a maximum of 10 and no minimum number of pages required. 
+Concise and insightful abstract for the paper. Please follow the instructions below for structuring your submission to CoLLAs 2023. This template follows closely the template for ICLR 2022 submissions, with some minor modifications. A conference submissions to CoLLAs should aim for 9 pages, with a maximum of 10 and no minimum number of pages required.
 \end{abstract}
 
-\section{Submission of conference papers to CoLLAs 2022}
+\section{Submission of conference papers to CoLLAs 2023}
 
 CoLLAs requires electronic submissions, processed by
 \href{https://openreview.net/}{https://openreview.net/}. See CoLLAs' website for more instructions.
@@ -83,7 +86,7 @@ faithfully.
 
 \subsection{Style}
 
-Papers to be submitted to CoLLAs 2022 must be prepared according to the
+Papers to be submitted to CoLLAs 2023 must be prepared according to the
 instructions presented here.
 
 %% Please note that we have introduced automatic line number generation
@@ -102,12 +105,12 @@ The style files for CoLLAs and other conference information are available online
 \begin{center}
    \href{http://www.lifelong-ml.cc/}{http://www.lifelong-ml.cc/}
 \end{center}
-The file \verb+collas2022_conference.pdf+ contains these
+The file \verb+collas2023_conference.pdf+ contains these
 instructions and illustrates the
 various formatting requirements your CoLLAs paper must satisfy.
 Submissions must be made using \LaTeX{} and the style files
-\verb+collas2022_conference.sty+ and \verb+collas2022_conference.bst+ (to be used with \LaTeX{}2e). The file
-\verb+collas2022_conference.tex+ may be used as a ``shell'' for writing your paper. All you
+\verb+collas2023_conference.sty+ and \verb+collas2023_conference.bst+ (to be used with \LaTeX{}2e). The file
+\verb+collas2023_conference.tex+ may be used as a ``shell'' for writing your paper. All you
 have to do is replace the author, title, abstract, and text of the paper with
 your own.
 
@@ -118,7 +121,7 @@ sections \ref{gen_inst}, \ref{headings}, and \ref{others} below.
 \label{gen_inst}
 
 The text must be confined within a rectangle 6.5~inches wide and
-9~inches (54~picas) long. 
+9~inches (54~picas) long.
 Use 10~point type with a vertical spacing of 11~points. Times New Roman is the
 preferred typeface throughout. Paragraphs are separated by 1/2~line space,
 with no indentation.
@@ -136,7 +139,7 @@ Please pay special attention to the instructions in section \ref{others}
 regarding figures, tables, acknowledgments, and references.
 
 
-There will be a strict upper limit of 9 pages for the main text of the initial submission, with unlimited additional pages for citations. 
+There will be a strict upper limit of 9 pages for the main text of the initial submission, with unlimited additional pages for citations.
 
 \section{Headings: first level}
 \label{headings}
@@ -203,7 +206,8 @@ either in black/white or in color.
 \begin{figure}[h]
 \begin{center}
 %\framebox[4.0in]{$\;$}
-\fbox{\rule[-.5cm]{0cm}{4cm} \rule[-.5cm]{4cm}{0cm}}
+%\fbox{\rule[-.5cm]{0cm}{4cm} \rule[-.5cm]{4cm}{0cm}}
+\includegraphics[scale=0.2]{neuron.jpg}
 \end{center}
 \caption{Sample figure caption.}
 \end{figure}
@@ -241,7 +245,7 @@ notation file from the textbook, \textit{Deep Learning}
 is not required and can be disabled by commenting out
 \texttt{math\_commands.tex}.
 
-\newpage 
+\newpage
 \centerline{\bf Numbers and Arrays}
 \bgroup
 \def\arraystretch{1.5}
@@ -414,9 +418,11 @@ acknowledgments, including those to funding agencies, go at the end of the paper
 
 \textbf{This should be only done in the camera ready version of the manuscript, not in the anonymized version submitted for review!}
 
+\section{Rebuttal Modifications}
+When making changes to your paper during the rebuttal period, please use the \verb+EasyReview+ package to indicate what text has been \add{added}, \remove{removed} or \replace{replaced}{replaced}. Other potentially useful commands are referenced \href{http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/easyreview/doc/easyReview.pdf}{here}.
 
-\bibliography{collas2022_conference}
-\bibliographystyle{collas2022_conference}
+\bibliography{collas2023_conference}
+\bibliographystyle{collas2023_conference}
 
 \appendix
 \section{Appendix}

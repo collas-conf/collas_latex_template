@@ -1,6 +1,6 @@
-%% File: collas2022_conference.bst - this is a copy of 'ICLR2022_conference.bst' adapted for the CoLLAs conference
+%% File: collas2023_conference.bst - this is a copy of 'ICLR2022_conference.bst' adapted for the CoLLAs conference
 %% A copy of `iclr2022.bst'
-%% A copy of iclm2010.bst, which is a modification of `plainnl.bst' for use with natbib package 
+%% A copy of iclm2010.bst, which is a modification of `plainnl.bst' for use with natbib package
 %%
 %% Copyright 2010 Hal Daum\'e III
 %% Modified by J. Fürnkranz
